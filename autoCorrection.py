@@ -50,6 +50,9 @@ def order_points(pts):
 src_points = order_points(doc_corners)
 dst_points = np.float32([[0, 0], [800, 0], [800, 1000], [0, 1000]])
 
+# Source points 
+print("Source Points (src_points):", src_points)
+
 # Step 7: Compute the perspective transform matrix and apply the warp
 matrix = cv2.getPerspectiveTransform(src_points, dst_points)
 warped = cv2.warpPerspective(original, matrix, (1000, 2000))
