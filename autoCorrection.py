@@ -1,3 +1,5 @@
+# automates the process of perspectiveCorrection.py with extra adjustments 
+
 import cv2
 import numpy as np
 

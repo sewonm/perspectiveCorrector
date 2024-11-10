@@ -1,3 +1,5 @@
+# simple edge detection 
+
 import cv2
 
 # Load the image
